@@ -19,7 +19,6 @@ function App() {
   };
 
   const handleEndEncounter = (
-    newUsersPokemonUrls: string[],
     message: string
   ) => {
     setSelectedLocation(null);

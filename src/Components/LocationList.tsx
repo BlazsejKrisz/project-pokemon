@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import LocationCard from "./LocationCard";
 import PokemonCard from "./PokemonCard";
 
@@ -19,7 +19,7 @@ type LocationListProps = {
 };
 
 export default function LocationList(props: LocationListProps) {
-  const { onLocationSelect, usersPokemonUrls } = props;
+  const { onLocationSelect} = props;
   const [locations, setLocations] = useState<Location[]>([]);
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(
     null
